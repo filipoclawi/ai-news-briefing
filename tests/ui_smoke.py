@@ -19,7 +19,7 @@ try:
     assert page.locator('.story[data-category]').count()==10
     assert page.locator('.signal').count()==5
     assert page.locator('.source-link').count()>=18
-    for label,expected in [('Security',2),('Models',2),('Agents',2),('Science',2),('Policy',1),('Infrastructure',1)]:
+    for label,expected in [('Security',2),('Models',1),('Agents',2),('Science',2),('Policy & legal',2),('Infrastructure',1)]:
       page.get_by_role('button',name=label,exact=True).click()
       assert page.locator('.story[data-category]:visible').count()==expected,(label,page.locator('.story[data-category]:visible').count())
     page.get_by_role('button',name='All',exact=True).click()
