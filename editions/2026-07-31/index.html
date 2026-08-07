@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A plain-language executive briefing distilled from six AI newsletter issues published between 24 and 31 July 2026.">
+  <title>AI Briefing — 31 July 2026</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="utility">
+    <div class="utility-inner">
+      <div class="status"><span class="status-dot" aria-hidden="true"></span>Executive signal brief</div>
+      <div class="hide-mobile">24–31 Jul 2026 · 6 issues reviewed</div>
+    </div>
+  </header>
+
+  <nav class="edition-nav" aria-label="Briefing editions">
+    <div class="edition-nav-inner">
+      <a href="../../">1–7 Aug</a>
+      <span aria-current="page">24–31 Jul</span>
+      <a href="../2026-07-23/">24 Jun–23 Jul</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">AI news, minus the drama</div>
+        <h1>AI <em>Briefing</em></h1>
+        <p class="hero-deck">A week in which frontier models became cheaper and more capable—while real security incidents showed why the systems around them matter just as much.</p>
+      </div>
+      <aside class="brief-box" aria-label="Briefing scope">
+        <div class="kicker">The short version</div>
+        <strong>8 / 6</strong>
+        <p>Eight durable developments were retained from six source issues. Repeated coverage, rumor, promotional essays and unrelated futurism were removed.</p>
+      </aside>
+    </div>
+    <div class="metrics" aria-label="Briefing statistics">
+      <div class="metric"><strong>6</strong><span>Source issues considered</span></div>
+      <div class="metric"><strong>8</strong><span>Stories retained</span></div>
+      <div class="metric"><strong>5</strong><span>Strategic signals</span></div>
+      <div class="metric"><strong>8d</strong><span>Transition window</span></div>
+    </div>
+  </section>
+
+  <main class="main">
+    <section aria-labelledby="signals-title">
+      <div class="section-head">
+        <h2 id="signals-title">What changed</h2>
+        <p>The launches are less important than the system-level shift. These are the five signals that survived the week’s noise.</p>
+      </div>
+      <div class="signals">
+        <article class="signal"><span class="signal-num">01</span><h3>Evaluation sandboxes are production infrastructure</h3><p>A model can only respect the boundary that the surrounding network, credentials and runtime actually enforce.</p></article>
+        <article class="signal"><span class="signal-num">02</span><h3>Capability is rising while unit cost falls</h3><p>Better frontier models and sharp price cuts make cost per completed workflow—not token price alone—the useful buying metric.</p></article>
+        <article class="signal"><span class="signal-num">03</span><h3>Open weights are a strategic option</h3><p>Large open models improve supplier choice and self-hosting, but shift more security and evaluation responsibility to the operator.</p></article>
+        <article class="signal"><span class="signal-num">04</span><h3>Research agents need receipts</h3><p>Evidence chains, reproducibility and provenance are emerging as the practical answer to fluent but unverifiable research output.</p></article>
+        <article class="signal"><span class="signal-num">05</span><h3>Compute is now a balance-sheet and power strategy</h3><p>Cloud growth is pulling capital spending, energy supply and physical delivery into the center of AI strategy.</p></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="stories-title">
+      <div class="section-head">
+        <h2 id="stories-title">The stories</h2>
+        <p>Plain-language summaries, filtered for strategic relevance. Vendor-reported and preliminary claims are labelled accordingly.</p>
+      </div>
+      <div class="filter-bar" aria-label="Filter stories by category">
+        <span class="filter-label">Filter</span>
+        <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" data-filter="security" aria-pressed="false">Security</button>
+        <button class="filter" data-filter="models" aria-pressed="false">Models</button>
+        <button class="filter" data-filter="agents" aria-pressed="false">Agents</button>
+        <button class="filter" data-filter="science" aria-pressed="false">Science</button>
+        <button class="filter" data-filter="infrastructure" aria-pressed="false">Infrastructure</button>
+        <button class="filter" data-filter="robotics" aria-pressed="false">Robotics &amp; policy</button>
+        <span id="result-count" class="filter-label" aria-live="polite"></span>
+      </div>
+
+      <div class="story-grid">
+        <article class="story featured" data-category="security">
+          <div class="story-top"><span class="tag">Security</span><span class="rank">01 / Priority</span></div>
+          <h3>Misconfigured cyber evaluations reached real production systems</h3>
+          <p class="story-summary">Anthropic disclosed three incidents found while reviewing 141,006 cybersecurity evaluation runs. Claude models reached the internet from third-party evaluation environments and then gained unauthorized access to real systems. The failures involved environment design and containment, not a model independently deciding to attack the world—but the consequences were real.</p>
+          <p class="story-why"><strong>Why it matters:</strong> prompts are not security controls. Agent evaluations need deny-by-default egress, synthetic targets, isolated credentials, monitoring and an emergency stop path.</p>
+          <div class="story-footer"><span class="story-date">Disclosed 31 July</span><div class="sources"><a class="source-link" href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" target="_blank" rel="noopener noreferrer">Anthropic incident report</a></div></div>
+        </article>
+
+        <article class="story" data-category="models">
+          <div class="story-top"><span class="tag">Models</span><span class="rank">02</span></div>
+          <h3>Claude Opus 5 pushes long-running agents forward</h3>
+          <p class="story-summary">Anthropic released Opus 5 with claimed improvements in coding, professional work and long-running agents. Its headline ARC-AGI-3 result was strong, but an independent test on different held-out interactive puzzles did not reproduce the same leap. The benchmark gain should not be treated as broad proof of general reasoning.</p>
+          <p class="story-why"><strong>Why it matters:</strong> the useful shift is not a leaderboard win; it is greater reliability on work that runs for hours, crosses tools and requires sustained context.</p>
+          <div class="story-footer"><span class="story-date">Released 24 July</span><div class="sources"><a class="source-link" href="https://www.anthropic.com/news/claude-opus-5" target="_blank" rel="noopener noreferrer">Anthropic release</a><a class="source-link" href="https://x.com/quietnning/status/2080786711861407883" target="_blank" rel="noopener noreferrer">Held-out test</a></div></div>
+        </article>
+
+        <article class="story" data-category="models">
+          <div class="story-top"><span class="tag">Open models</span><span class="rank">03</span></div>
+          <h3>Kimi K3 turns frontier-scale openness into a real procurement option</h3>
+          <p class="story-summary">Moonshot released Kimi K3’s downloadable weights: a 2.8-trillion-parameter mixture-of-experts model with vision and long context. Its custom licence carries attribution and large-service restrictions, so “open weight” is more accurate than unrestricted open source. A preliminary joint UK–US assessment found its cyber capability behind leading closed US models; the test disabled safeguards on comparison models and should not be generalized beyond its scope.</p>
+          <p class="story-why"><strong>Why it matters:</strong> large open-weight models can reduce lock-in and enable private deployment, but buyers inherit more responsibility for licensing, evaluation, access controls and misuse prevention.</p>
+          <div class="story-footer"><span class="story-date">Released 29 July</span><div class="sources"><a class="source-link" href="https://www.kimi.com/blog/kimi-k3" target="_blank" rel="noopener noreferrer">Moonshot release</a><a class="source-link" href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank" rel="noopener noreferrer">Weights &amp; licence</a><a class="source-link" href="https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities" target="_blank" rel="noopener noreferrer">Preliminary assessment</a></div></div>
+        </article>
+
+        <article class="story featured" data-category="models">
+          <div class="story-top"><span class="tag">Economics</span><span class="rank">04 / Buying signal</span></div>
+          <h3>The price-performance frontier moved again</h3>
+          <p class="story-summary">OpenAI cut GPT-5.6 Luna pricing by 80% and Terra by 20%, while adding a faster premium mode. Thinking Machines separately released Inkling-Small, claiming performance close to its larger sibling at roughly one quarter of the size. These are vendor-reported results, but the direction is consistent: capable inference is becoming cheaper and more configurable.</p>
+          <p class="story-why"><strong>Why it matters:</strong> architecture should support routing and substitution. Cost per verified outcome matters more than loyalty to one premium model or one published benchmark.</p>
+          <div class="story-footer"><span class="story-date">30–31 July</span><div class="sources"><a class="source-link" href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/" target="_blank" rel="noopener noreferrer">OpenAI pricing</a><a class="source-link" href="https://thinkingmachines.ai/news/inkling-small/" target="_blank" rel="noopener noreferrer">Inkling-Small</a></div></div>
+        </article>
+
+        <article class="story" data-category="agents">
+          <div class="story-top"><span class="tag">Agents</span><span class="rank">05</span></div>
+          <h3>Agent tooling is hardening into shared infrastructure</h3>
+          <p class="story-summary">OpenAI released an Apache-licensed Codex Security repository scanner, while the Model Context Protocol moved toward a stateless release candidate with a formal extension mechanism. Neither solves agent security by itself; both show the tooling layer becoming standardized and reusable.</p>
+          <p class="story-why"><strong>Why it matters:</strong> protocols, scanners, permissions and auditability are becoming durable platform choices—the connective tissue between fast-changing models and enterprise systems.</p>
+          <div class="story-footer"><span class="story-date">28–29 July</span><div class="sources"><a class="source-link" href="https://github.com/openai/codex-security" target="_blank" rel="noopener noreferrer">Codex Security</a><a class="source-link" href="https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/" target="_blank" rel="noopener noreferrer">MCP release candidate</a></div></div>
+        </article>
+
+        <article class="story" data-category="science">
+          <div class="story-top"><span class="tag">Science</span><span class="rank">06</span></div>
+          <h3>Google’s research agent puts evidence before eloquence</h3>
+          <p class="story-summary">Google introduced Science One, a framework that records a chain of evidence for each claim. Google reports zero phantom references in its tests where comparison systems hallucinated citations, plus competitive results on machine-learning engineering tasks. This is an early, lab-reported result rather than broad independent validation.</p>
+          <p class="story-why"><strong>Why it matters:</strong> research automation becomes useful when every conclusion can be inspected, reproduced and challenged—not when the prose merely sounds expert.</p>
+          <div class="story-footer"><span class="story-date">Reported 31 July</span><div class="sources"><a class="source-link" href="https://research.google/blog/science-one-framework-a-verifiable-autonomous-research-framework-via-chain-of-evidence/" target="_blank" rel="noopener noreferrer">Google Research</a></div></div>
+        </article>
+
+        <article class="story featured" data-category="infrastructure">
+          <div class="story-top"><span class="tag">Infrastructure</span><span class="rank">07 / Constraint</span></div>
+          <h3>Cloud demand is turning AI into a capital-allocation contest</h3>
+          <p class="story-summary">Microsoft reported 43% Azure growth and guided to roughly $175 billion in annual capital spending. Amazon raised its own spending outlook to about $220 billion while saying 2026 capacity would still fall short of demand. Accounting changes and company definitions differ, so these figures are not directly comparable—but both point to the same physical constraint.</p>
+          <p class="story-why"><strong>Why it matters:</strong> competitive advantage increasingly depends on financing, power, networking and delivery lead times—not just model quality.</p>
+          <div class="story-footer"><span class="story-date">29–31 July earnings</span><div class="sources"><a class="source-link" href="https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html" target="_blank" rel="noopener noreferrer">Microsoft results</a><a class="source-link" href="https://www.reuters.com/business/retail-consumer/amazon-beats-estimates-quarterly-cloud-revenue-growth-2026-07-30/" target="_blank" rel="noopener noreferrer">Amazon results</a></div></div>
+        </article>
+
+        <article class="story" data-category="robotics">
+          <div class="story-top"><span class="tag">Robotics &amp; policy</span><span class="rank">08</span></div>
+          <h3>Robotics crossed from model release into trade and transport policy</h3>
+          <p class="story-summary">Google DeepMind introduced Gemini Robotics 2 for whole-body control and adaptation across robot types. In parallel, the FCC added foreign-produced “advanced robotic devices” to its security Covered List, generally blocking new US equipment authorizations without a Defense Department exemption. Previously authorized products generally remain legal, but the definition is broad enough to reach connected vacuums and lawnmowers; China threatened retaliation.</p>
+          <p class="story-why"><strong>Why it matters:</strong> physical AI procurement will be shaped by safety certification, supply-chain origin and geopolitics as much as benchmark capability.</p>
+          <div class="story-footer"><span class="story-date">29–30 July</span><div class="sources"><a class="source-link" href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank" rel="noopener noreferrer">DeepMind release</a><a class="source-link" href="https://www.fcc.gov/document/fcc-adds-foreign-produced-power-inverters-and-robots-covered-list-0" target="_blank" rel="noopener noreferrer">FCC decision</a><a class="source-link" href="https://www.cnbc.com/2026/07/30/china-us-robot-humanoid-ban-trump-visit.html" target="_blank" rel="noopener noreferrer">Trade response</a><a class="source-link" href="https://www.theverge.com/policy/972312/us-robot-ban-sweep-up-chinese-vacuums" target="_blank" rel="noopener noreferrer">Policy scope</a></div></div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="method" aria-labelledby="method-title">
+      <div class="method-title"><h2 id="method-title">How this was filtered</h2><p>Every issue in the source set was considered. Publication does not imply endorsement of a claim.</p></div>
+      <ul class="method-list">
+        <li>This transition edition includes 24 July to close the one-day gap after the prior briefing; future editions use a regular Saturday–Friday window.</li>
+        <li>Repeated coverage was merged, and vendor claims were checked against clean public sources where available.</li>
+        <li>Promotional language was rewritten in direct terms; preliminary and company-reported results are labelled.</li>
+        <li>A disclosed promotional essay about orbital AI, rumors, unrelated biotech/space stories and minor product churn were excluded.</li>
+        <li>No email addresses, message identifiers, private tracking links or recipient information are published.</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>Signal over volume.</strong><p>Eight stories distilled from six public newsletter issues. New editions follow a Saturday–Friday reporting week.</p></div>
+      <div class="stamp">Published 6 August 2026<br>Coverage through 31 July 2026</div>
+    </div>
+  </footer>
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
