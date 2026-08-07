@@ -7,7 +7,7 @@ Live site: <https://filipoclawi.github.io/ai-news-briefing/>
 ## Editions
 
 - **24–31 July 2026** — transition edition covering the day after the original briefing through the end of the first completed reporting week; six source issues considered, eight stories retained.
-- **24 June–23 July 2026** — original edition; sixteen source issues considered, ten stories retained.
+- **24 June–23 July 2026** — original edition, updated after one late recovery; seventeen source issues considered, ten stories retained.
 - Future editions use a regular **Saturday–Friday** reporting window and are published on Friday evening.
 
 The top-level URL always presents the latest edition. Earlier editions remain available through the edition navigation.

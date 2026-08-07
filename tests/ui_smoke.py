@@ -49,6 +49,17 @@ try:
       assert page.locator('.edition-nav a[href="../../"]').count()==1
       assert page.locator('.edition-nav a').count()==2
       assert page.evaluate('document.documentElement.scrollWidth <= document.documentElement.clientWidth')
+      if slug=='2026-07-23':
+        assert '17 issues reviewed · 1 recovered' in page.locator('.utility').text_content()
+        assert page.locator('.brief-box strong').text_content().strip()=='10 / 17'
+        assert 'recovered after the original publication' in page.locator('.method').inner_text()
+        archive_hrefs=page.locator('.source-link').evaluate_all("els=>els.map(e=>e.href)")
+        assert all(h.startswith('https://') for h in archive_hrefs)
+        assert not any('substack.com/redirect/' in h or '?' in h for h in archive_hrefs)
+        archive_text=page.locator('body').inner_text().lower()
+        assert not re.search(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}',archive_text)
+        assert not any(x in archive_text for x in ['/home/','gmail','@icloud.com'])
+        page.screenshot(path=str(ROOT/'test-results-recovered-archive.png'),full_page=True)
 
     mobile=browser.new_page(viewport={'width':390,'height':844})
     mobile.on('console',lambda m: errors.append(m.text) if m.type=='error' else None)
@@ -63,6 +74,6 @@ try:
     mobile.screenshot(path=str(ROOT/'test-results-mobile.png'),full_page=True)
     mobile.close(); browser.close()
     assert not errors,errors
-  print('UI smoke passed: 3 editions, exact filters, clean HTTPS links, desktop/mobile overflow, no console errors')
+  print('UI smoke passed: 3 editions, recovery metadata, exact filters, clean HTTPS links, desktop/mobile overflow, no console errors')
 finally:
   server.terminate(); server.wait(timeout=5)
