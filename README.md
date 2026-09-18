@@ -6,6 +6,13 @@ Live site: <https://filipoclawi.github.io/ai-news-briefing/>
 
 ## Editions
 
+Recovered publication on 18 September 2026: 14 source issues, 10 historical; 11 new stories across four windows.
+
+- **2026-09-18** — 4 source issues; 4 stories.
+- **2026-09-11** — 2 source issues; 2 stories.
+- **2026-09-04** — 4 source issues; 2 stories.
+- **2026-08-28** — 4 source issues; 3 stories.
+
 - **15–21 August 2026** — five source issues considered, eight stories retained.
 - **8–14 August 2026** — catch-up edition assembled from four late-recovered source issues, seven stories retained.
 - **1–7 August 2026** — six source issues considered, seven stories retained.

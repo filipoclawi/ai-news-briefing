@@ -1,0 +1,42 @@
+{
+  "index.html": {
+    "title": "AI Briefing \u2014 18 September 2026",
+    "stories": 4
+  },
+  "editions/2026-07-23/index.html": {
+    "title": "AI Briefing \u2014 23 July 2026",
+    "stories": 10
+  },
+  "editions/2026-07-31/index.html": {
+    "title": "AI Briefing \u2014 31 July 2026",
+    "stories": 8
+  },
+  "editions/2026-08-07/index.html": {
+    "title": "AI Briefing \u2014 7 August 2026",
+    "stories": 7
+  },
+  "editions/2026-08-14/index.html": {
+    "title": "AI Briefing \u2014 14 August 2026",
+    "stories": 7
+  },
+  "editions/2026-08-21/index.html": {
+    "title": "AI Briefing \u2014 21 August 2026",
+    "stories": 8
+  },
+  "editions/2026-08-28/index.html": {
+    "title": "AI Briefing \u2014 28 August 2026",
+    "stories": 3
+  },
+  "editions/2026-09-04/index.html": {
+    "title": "AI Briefing \u2014 4 September 2026",
+    "stories": 2
+  },
+  "editions/2026-09-11/index.html": {
+    "title": "AI Briefing \u2014 11 September 2026",
+    "stories": 2
+  },
+  "editions/2026-09-18/index.html": {
+    "title": "AI Briefing \u2014 18 September 2026",
+    "stories": 4
+  }
+}
