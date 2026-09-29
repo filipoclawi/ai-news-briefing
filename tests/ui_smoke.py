@@ -20,13 +20,13 @@ try:
             page.on('pageerror', lambda e: errors.append(str(e)))
             page.on('console', lambda m: errors.append(m.text) if m.type == 'error' else None)
             for path, expected in manifest.items():
-                response = page.goto(base + path + '?verify=20260918', wait_until='networkidle')
+                response = page.goto(base + path + '?verify=20260929', wait_until='networkidle')
                 assert response.status == 200, path
                 page.wait_for_function("document.documentElement.dataset.ready === 'true'")
                 assert page.title() == expected['title'], path
                 assert page.locator('.story[data-category]').count() == expected['stories'], path
                 assert page.locator('.edition-nav [aria-current=page]').count() == 1
-                assert page.locator('.edition-nav a').count() == 8
+                assert page.locator('.edition-nav a').count() == len(manifest) - 2
                 assert page.evaluate('document.documentElement.scrollWidth <= document.documentElement.clientWidth'), path
                 for button in page.locator('button[data-filter]').all():
                     value = button.get_attribute('data-filter')
