@@ -20,11 +20,21 @@ try:
             page.on('pageerror', lambda e: errors.append(str(e)))
             page.on('console', lambda m: errors.append(m.text) if m.type == 'error' else None)
             for path, expected in manifest.items():
-                response = page.goto(base + path + '?verify=20260929', wait_until='networkidle')
+                response = page.goto(base + path + '?verify=' + os.environ.get('VERIFY_BUILD', '20261002'), wait_until='networkidle')
                 assert response.status == 200, path
                 page.wait_for_function("document.documentElement.dataset.ready === 'true'")
                 assert page.title() == expected['title'], path
                 assert page.locator('.story[data-category]').count() == expected['stories'], path
+                if path in ['index.html', 'editions/2026-10-02/index.html']:
+                    assert page.locator('.metric strong').all_text_contents() == ['3', '7', '5', '0']
+                    assert page.locator('.method-list a').count() == 3
+                    assert '22:31:29 CEST' in page.locator('.method-list').inner_text()
+                    page.locator('[data-filter=all]').focus()
+                    page.keyboard.press('Tab')
+                    assert page.evaluate("document.activeElement.matches('button[data-filter]')")
+                    page.keyboard.press('Enter')
+                    assert page.evaluate("document.activeElement.getAttribute('aria-pressed')") == 'true'
+                    page.locator('[data-filter=all]').click()
                 assert page.locator('.edition-nav [aria-current=page]').count() == 1
                 assert page.locator('.edition-nav a').count() == len(manifest) - 2
                 assert page.evaluate('document.documentElement.scrollWidth <= document.documentElement.clientWidth'), path
