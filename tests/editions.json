@@ -1,7 +1,15 @@
 {
   "index.html": {
-    "title": "AI Briefing \u2014 2 October 2026 \u00b7 Week to date",
-    "stories": 7
+    "title": "AI Briefing \u2014 2026-10-16 \u00b7 Completed week",
+    "stories": 12,
+    "metrics": [
+      "3",
+      "12",
+      "4",
+      "0"
+    ],
+    "sources": 3,
+    "cutoff": "17 October 2026, 09:47:08 CEST"
   },
   "editions/2026-07-23/index.html": {
     "title": "AI Briefing \u2014 23 July 2026",
@@ -46,5 +54,29 @@
   "editions/2026-10-02/index.html": {
     "title": "AI Briefing \u2014 2 October 2026 \u00b7 Week to date",
     "stories": 7
+  },
+  "editions/2026-10-16/index.html": {
+    "title": "AI Briefing \u2014 2026-10-16 \u00b7 Completed week",
+    "stories": 12,
+    "metrics": [
+      "3",
+      "12",
+      "4",
+      "0"
+    ],
+    "sources": 3,
+    "cutoff": "17 October 2026, 09:47:08 CEST"
+  },
+  "editions/2026-10-09/index.html": {
+    "title": "AI Briefing \u2014 2026-10-09 \u00b7 Completed week",
+    "stories": 8,
+    "metrics": [
+      "2",
+      "8",
+      "3",
+      "2"
+    ],
+    "sources": 2,
+    "cutoff": "17 October 2026, 09:47:08 CEST"
   }
 }

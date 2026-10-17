@@ -25,10 +25,35 @@ try:
                 page.wait_for_function("document.documentElement.dataset.ready === 'true'")
                 assert page.title() == expected['title'], path
                 assert page.locator('.story[data-category]').count() == expected['stories'], path
-                if path in ['index.html', 'editions/2026-10-02/index.html']:
+                if path == 'editions/2026-10-02/index.html':
                     assert page.locator('.metric strong').all_text_contents() == ['3', '7', '5', '0']
                     assert page.locator('.method-list a').count() == 3
                     assert '22:31:29 CEST' in page.locator('.method-list').inner_text()
+                    page.locator('[data-filter=all]').focus()
+                    page.keyboard.press('Tab')
+                    assert page.evaluate("document.activeElement.matches('button[data-filter]')")
+                    page.keyboard.press('Enter')
+                    assert page.evaluate("document.activeElement.getAttribute('aria-pressed')") == 'true'
+                    page.locator('[data-filter=all]').click()
+                if 'metrics' in expected:
+                    assert page.locator('.metric strong').all_text_contents() == expected['metrics']
+                    assert page.locator('.method-list a').count() == expected['sources']
+                    assert expected['cutoff'] in page.locator('.method-list').inner_text()
+                    method = page.locator('.method-list').inner_text()
+                    assert 'Email-only method' in method and 'no independent verification is claimed' in method
+                    issue_urls = set(page.locator('.method-list a').evaluate_all('els => els.map(e => e.href)'))
+                    assert len(issue_urls) == expected['sources']
+                    for card in page.locator('.story').all():
+                        assert card.locator('.source-link').get_attribute('href') in issue_urls
+                        assert 'Newsletter issue' in card.locator('.source-link').inner_text()
+                        assert '~1 min summary' in card.locator('.story-date').inner_text().lower()
+                        date_box = card.locator('.story-date').bounding_box()
+                        link_box = card.locator('.source-link').bounding_box()
+                        card_box = card.bounding_box()
+                        assert date_box and link_box and card_box
+                        assert date_box['width'] >= 150
+                        assert link_box['width'] <= card_box['width']
+                    assert 'Completed week' in page.title()
                     page.locator('[data-filter=all]').focus()
                     page.keyboard.press('Tab')
                     assert page.evaluate("document.activeElement.matches('button[data-filter]')")

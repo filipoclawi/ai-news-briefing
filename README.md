@@ -6,6 +6,11 @@ Live site: <https://filipoclawi.github.io/ai-news-briefing/>
 
 ## Editions
 
+- **10–16 October 2026 (completed-week recovery)** — three source issues reviewed; twelve email-grounded stories. Reviewed 17 October, 09:47:08 CEST.
+- **3–9 October 2026 (completed-week catch-up)** — two historical source issues recovered; eight email-grounded stories. Recovered on 17 October, filling the previously unpublished window. All sixty previously published story cards remain intact.
+
+The 16 October run prepared local changes but did not publish; the recovery resumed that work, read all five source emails, and used their actual clean public issue links without requiring external article fetches.
+
 - **26 September–2 October 2026 (week to date)** — three source issues reviewed, seven stories retained. Updated 2 October at the 22:31:29 CEST source cutoff; two additional current-week issues added five stories, with no historical recoveries in this update.
 
 Recovered publication on 18 September 2026: 14 source issues, 10 historical; 11 new stories across four windows.
