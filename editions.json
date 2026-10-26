@@ -1,0 +1,146 @@
+{
+  "latest": "2026-10-30",
+  "sourceCutoff": "2026-10-26T13:04:00+01:00",
+  "mergePolicy": "Merge sources by clean issue URL and preserve existing story IDs; a partial edition must never be replaced by newly arrived sources alone.",
+  "editions": [
+    {
+      "date": "2026-10-30",
+      "path": "editions/2026-10-30/index.html",
+      "status": "week-to-date",
+      "range": "24.–30. Oktober 2026",
+      "stories": 1,
+      "sources": [
+        {
+          "title": "Chain Theory",
+          "url": "https://theinnermostloop.substack.com/p/chain-theory",
+          "audioRuntime": "16:50",
+          "storyIds": [
+            "chain-theory-formal-proof-physical-conjecture"
+          ]
+        }
+      ],
+      "storyIds": [
+        "chain-theory-formal-proof-physical-conjecture"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "editions/2026-10-23/index.html",
+      "status": "completed",
+      "range": "17.–23. Oktober 2026",
+      "stories": 8,
+      "sources": [
+        {
+          "title": "Welcome to October 18, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-october-18-2026",
+          "audioRuntime": "6:13",
+          "storyIds": [
+            "open-models-muse-spark-beam",
+            "software-scion-automated-merges",
+            "safety-metr-independent-access",
+            "compute-tpu-financing-supplychain"
+          ]
+        },
+        {
+          "title": "Welcome to October 21, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-october-21-2026",
+          "audioRuntime": "6:01",
+          "storyIds": [
+            "inference-hybridagents-mercury",
+            "agents-monitoring-disabled",
+            "biology-antivenom-agent-campaign",
+            "datacentres-pods-credit-risk"
+          ]
+        }
+      ],
+      "storyIds": [
+        "inference-hybridagents-mercury",
+        "agents-monitoring-disabled",
+        "biology-antivenom-agent-campaign",
+        "datacentres-pods-credit-risk",
+        "open-models-muse-spark-beam",
+        "software-scion-automated-merges",
+        "safety-metr-independent-access",
+        "compute-tpu-financing-supplychain"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "path": "editions/2026-10-16/index.html",
+      "status": "archived",
+      "stories": 12
+    },
+    {
+      "date": "2026-10-09",
+      "path": "editions/2026-10-09/index.html",
+      "status": "archived",
+      "stories": 8
+    },
+    {
+      "date": "2026-10-02",
+      "path": "editions/2026-10-02/index.html",
+      "status": "archived",
+      "stories": 7
+    },
+    {
+      "date": "2026-09-25",
+      "path": "editions/2026-09-25/index.html",
+      "status": "archived",
+      "stories": 2
+    },
+    {
+      "date": "2026-09-18",
+      "path": "editions/2026-09-18/index.html",
+      "status": "archived",
+      "stories": 4
+    },
+    {
+      "date": "2026-09-11",
+      "path": "editions/2026-09-11/index.html",
+      "status": "archived",
+      "stories": 2
+    },
+    {
+      "date": "2026-09-04",
+      "path": "editions/2026-09-04/index.html",
+      "status": "archived",
+      "stories": 2
+    },
+    {
+      "date": "2026-08-28",
+      "path": "editions/2026-08-28/index.html",
+      "status": "archived",
+      "stories": 3
+    },
+    {
+      "date": "2026-08-21",
+      "path": "editions/2026-08-21/index.html",
+      "status": "archived",
+      "stories": 8
+    },
+    {
+      "date": "2026-08-14",
+      "path": "editions/2026-08-14/index.html",
+      "status": "archived",
+      "stories": 7
+    },
+    {
+      "date": "2026-08-07",
+      "path": "editions/2026-08-07/index.html",
+      "status": "archived",
+      "stories": 7
+    },
+    {
+      "date": "2026-07-31",
+      "path": "editions/2026-07-31/index.html",
+      "status": "archived",
+      "stories": 8
+    },
+    {
+      "date": "2026-07-23",
+      "path": "editions/2026-07-23/index.html",
+      "status": "archived",
+      "stories": 10
+    }
+  ]
+}

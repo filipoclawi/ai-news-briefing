@@ -16,7 +16,11 @@
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    if (resultCount) resultCount.textContent = `${shown} ${shown === 1 ? 'story' : 'stories'}`;
+    if (resultCount) {
+      const german = document.documentElement.lang === 'de';
+      const noun = german ? (shown === 1 ? 'Meldung' : 'Meldungen') : (shown === 1 ? 'story' : 'stories');
+      resultCount.textContent = `${shown} ${noun}`;
+    }
   }
 
   filters.forEach(button => button.addEventListener('click', () => applyFilter(button.dataset.filter)));

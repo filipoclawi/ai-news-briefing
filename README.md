@@ -6,6 +6,11 @@ Live site: <https://filipoclawi.github.io/ai-news-briefing/>
 
 ## Editions
 
+- **24.–30. Oktober 2026 — Woche bisher:** eine Newsletter-Ausgabe vom 24. Oktober, eine Forschungs-Kurzvorschau. Quellenstand: 26. Oktober 2026, 13:04 CET. Noch keine abgeschlossene Wochenausgabe.
+- **17.–23. Oktober 2026 — abgeschlossene Woche, Nachtrag:** zwei Newsletter-Ausgaben, acht technische und strategische Kurzanalysen. Alle achtzig zuvor veröffentlichten Karten bleiben in ihren Archiven erhalten.
+
+`editions.json` hält den aktuellen Ausgabenstand, saubere Quellenadressen und stabile Karten-IDs fest. Bei der Freitagsaktualisierung werden vorhandene Quellen und Karten mit neuen Eingängen zusammengeführt: nach Quellenadresse und Karten-ID deduplizieren, niemals den Zwischenstand allein durch neue Eingänge ersetzen. Die aktuelle Wochenquelle bleibt bis zur verifizierten Finalisierung im Posteingang. Private Quellenbelege werden separat geführt und nicht veröffentlicht.
+
 - **10–16 October 2026 (completed-week recovery)** — three source issues reviewed; twelve email-grounded stories. Reviewed 17 October, 09:47:08 CEST.
 - **3–9 October 2026 (completed-week catch-up)** — two historical source issues recovered; eight email-grounded stories. Recovered on 17 October, filling the previously unpublished window. All sixty previously published story cards remain intact.
 
@@ -33,8 +38,8 @@ The top-level URL always presents the latest edition. Earlier editions remain av
 
 - Every source issue in the frozen reporting-window set is considered.
 - Repeated stories are merged and low-signal material is removed.
-- Hyperbolic language is rewritten in plain English.
-- Early, disputed, or company-reported claims are labelled.
+- Hyperbolische Sprache wird neutral zusammengefasst; neue Ausgaben erscheinen auf Deutsch, frühere Karten bleiben unverändert.
+- Frühe, strittige und unternehmenseigene Angaben werden als berichtete Behauptungen gekennzeichnet.
 - Clean public links are used instead of email tracking links.
 - No email addresses, Gmail identifiers, recipient data, credentials, private attribution, or personalized links are published.
 - Source emails are marked read and archived only after the corresponding public edition is deployed and verified; the `AI news` label is preserved.

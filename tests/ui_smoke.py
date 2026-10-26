@@ -40,20 +40,30 @@ try:
                     assert page.locator('.method-list a').count() == expected['sources']
                     assert expected['cutoff'] in page.locator('.method-list').inner_text()
                     method = page.locator('.method-list').inner_text()
-                    assert 'Email-only method' in method and 'no independent verification is claimed' in method
+                    german = expected.get('basis') == 'newsletter-de'
+                    if german:
+                        assert page.locator('html').get_attribute('lang') == 'de'
+                        assert 'Auf Grundlage der Newsletter' in method
+                        assert 'Keine unabhängige Verifikation' in method
+                        assert 'Meldung' in (page.locator('#result-count').text_content() or '')
+                        assert ('Woche bisher' in page.title()) == (expected['status'] == 'week-to-date')
+                        assert 'lesezeit nicht angegeben' in page.locator('body').inner_text().lower()
+                        assert 'Newsletter-Audio:' in method
+                    else:
+                        assert 'Email-only method' in method and 'no independent verification is claimed' in method
+                        assert 'Completed week' in page.title()
                     issue_urls = set(page.locator('.method-list a').evaluate_all('els => els.map(e => e.href)'))
                     assert len(issue_urls) == expected['sources']
                     for card in page.locator('.story').all():
                         assert card.locator('.source-link').get_attribute('href') in issue_urls
-                        assert 'Newsletter issue' in card.locator('.source-link').inner_text()
-                        assert '~1 min summary' in card.locator('.story-date').inner_text().lower()
+                        assert ('Zum Newsletter' if german else 'Newsletter issue') in card.locator('.source-link').inner_text()
+                        assert ('Lesezeit nicht angegeben' if german else '~1 min summary') in (card.locator('.story-date').text_content() or '')
                         date_box = card.locator('.story-date').bounding_box()
                         link_box = card.locator('.source-link').bounding_box()
                         card_box = card.bounding_box()
                         assert date_box and link_box and card_box
                         assert date_box['width'] >= 150
                         assert link_box['width'] <= card_box['width']
-                    assert 'Completed week' in page.title()
                     page.locator('[data-filter=all]').focus()
                     page.keyboard.press('Tab')
                     assert page.evaluate("document.activeElement.matches('button[data-filter]')")

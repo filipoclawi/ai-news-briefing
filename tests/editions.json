@@ -1,62 +1,64 @@
 {
   "index.html": {
-    "title": "AI Briefing \u2014 2026-10-16 \u00b7 Completed week",
-    "stories": 12,
+    "title": "AI Briefing — 2026-10-30 · Woche bisher · Week to date",
+    "stories": 1,
     "metrics": [
-      "3",
-      "12",
-      "4",
+      "1",
+      "1",
+      "1",
       "0"
     ],
-    "sources": 3,
-    "cutoff": "17 October 2026, 09:47:08 CEST"
+    "sources": 1,
+    "cutoff": "26. Oktober 2026, 13:04 CET",
+    "basis": "newsletter-de",
+    "status": "week-to-date"
   },
   "editions/2026-07-23/index.html": {
-    "title": "AI Briefing \u2014 23 July 2026",
+    "title": "AI Briefing — 23 July 2026",
     "stories": 10
   },
   "editions/2026-07-31/index.html": {
-    "title": "AI Briefing \u2014 31 July 2026",
+    "title": "AI Briefing — 31 July 2026",
     "stories": 8
   },
   "editions/2026-08-07/index.html": {
-    "title": "AI Briefing \u2014 7 August 2026",
+    "title": "AI Briefing — 7 August 2026",
     "stories": 7
   },
   "editions/2026-08-14/index.html": {
-    "title": "AI Briefing \u2014 14 August 2026",
+    "title": "AI Briefing — 14 August 2026",
     "stories": 7
   },
   "editions/2026-08-21/index.html": {
-    "title": "AI Briefing \u2014 21 August 2026",
+    "title": "AI Briefing — 21 August 2026",
     "stories": 8
   },
   "editions/2026-08-28/index.html": {
-    "title": "AI Briefing \u2014 28 August 2026",
+    "title": "AI Briefing — 28 August 2026",
     "stories": 3
   },
   "editions/2026-09-04/index.html": {
-    "title": "AI Briefing \u2014 4 September 2026",
+    "title": "AI Briefing — 4 September 2026",
     "stories": 2
   },
   "editions/2026-09-11/index.html": {
-    "title": "AI Briefing \u2014 11 September 2026",
+    "title": "AI Briefing — 11 September 2026",
     "stories": 2
   },
   "editions/2026-09-18/index.html": {
-    "title": "AI Briefing \u2014 18 September 2026",
+    "title": "AI Briefing — 18 September 2026",
     "stories": 4
   },
   "editions/2026-09-25/index.html": {
-    "title": "AI Briefing \u2014 25 September 2026",
+    "title": "AI Briefing — 25 September 2026",
     "stories": 2
   },
   "editions/2026-10-02/index.html": {
-    "title": "AI Briefing \u2014 2 October 2026 \u00b7 Week to date",
+    "title": "AI Briefing — 2 October 2026 · Week to date",
     "stories": 7
   },
   "editions/2026-10-16/index.html": {
-    "title": "AI Briefing \u2014 2026-10-16 \u00b7 Completed week",
+    "title": "AI Briefing — 2026-10-16 · Completed week",
     "stories": 12,
     "metrics": [
       "3",
@@ -68,7 +70,7 @@
     "cutoff": "17 October 2026, 09:47:08 CEST"
   },
   "editions/2026-10-09/index.html": {
-    "title": "AI Briefing \u2014 2026-10-09 \u00b7 Completed week",
+    "title": "AI Briefing — 2026-10-09 · Completed week",
     "stories": 8,
     "metrics": [
       "2",
@@ -78,5 +80,33 @@
     ],
     "sources": 2,
     "cutoff": "17 October 2026, 09:47:08 CEST"
+  },
+  "editions/2026-10-23/index.html": {
+    "title": "AI Briefing — 2026-10-23 · Abgeschlossene Woche · Nachtrag",
+    "stories": 8,
+    "metrics": [
+      "2",
+      "8",
+      "3",
+      "2"
+    ],
+    "sources": 2,
+    "cutoff": "26. Oktober 2026, 13:04 CET",
+    "basis": "newsletter-de",
+    "status": "completed"
+  },
+  "editions/2026-10-30/index.html": {
+    "title": "AI Briefing — 2026-10-30 · Woche bisher · Week to date",
+    "stories": 1,
+    "metrics": [
+      "1",
+      "1",
+      "1",
+      "0"
+    ],
+    "sources": 1,
+    "cutoff": "26. Oktober 2026, 13:04 CET",
+    "basis": "newsletter-de",
+    "status": "week-to-date"
   }
 }
