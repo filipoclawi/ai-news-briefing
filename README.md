@@ -6,7 +6,7 @@ Live site: <https://filipoclawi.github.io/ai-news-briefing/>
 
 ## Editions
 
-- **24.–30. Oktober 2026 — Woche bisher:** eine Newsletter-Ausgabe vom 24. Oktober, eine Forschungs-Kurzvorschau. Quellenstand: 26. Oktober 2026, 13:04 CET. Noch keine abgeschlossene Wochenausgabe.
+- **24.–30. Oktober 2026 — Freitagsausgabe, Woche bisher:** eine Newsletter-Ausgabe vom 24. Oktober, eine unverändert beibehaltene Forschungs-Kurzvorschau; keine neue Meldung. Redaktionell finalisiert zum Quellenstand 30. Oktober 2026, 22:31:16 CET. Das Kalenderfenster endet erst um Mitternacht; spätere Eingänge werden als Nachtrag ergänzt. Keine historischen Nachträge in diesem Lauf.
 - **17.–23. Oktober 2026 — abgeschlossene Woche, Nachtrag:** zwei Newsletter-Ausgaben, acht technische und strategische Kurzanalysen. Alle achtzig zuvor veröffentlichten Karten bleiben in ihren Archiven erhalten.
 
 `editions.json` hält den aktuellen Ausgabenstand, saubere Quellenadressen und stabile Karten-IDs fest. Bei der Freitagsaktualisierung werden vorhandene Quellen und Karten mit neuen Eingängen zusammengeführt: nach Quellenadresse und Karten-ID deduplizieren, niemals den Zwischenstand allein durch neue Eingänge ersetzen. Die aktuelle Wochenquelle bleibt bis zur verifizierten Finalisierung im Posteingang. Private Quellenbelege werden separat geführt und nicht veröffentlicht.

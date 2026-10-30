@@ -18,7 +18,7 @@ class Cards(HTMLParser):
 
 state = json.loads((ROOT / 'editions.json').read_text())
 assert state['latest'] == '2026-10-30'
-assert state['sourceCutoff'] == '2026-10-26T13:04:00+01:00'
+assert state['sourceCutoff'] == '2026-10-30T22:31:16+01:00'
 assert len(state['editions']) == len(list((ROOT / 'editions').glob('*/index.html')))
 by_date = {e['date']: e for e in state['editions']}
 for date, stories, sources, status in [
@@ -43,10 +43,14 @@ for date, stories, sources, status in [
         assert source['url'] in text
     assert set(parser.ids) == {i for s in entry['sources'] for i in s['storyIds']}
 root = (ROOT / 'index.html').read_text()
-assert 'Woche bisher' in root and '26. Oktober 2026, 13:04 CET' in root
+assert 'Woche bisher' in root and '30. Oktober 2026, 22:31:16 CET' in root
 assert '24.–30. Oktober 2026' in root
 assert '2026-10-30' in root
-assert 'Noch keine abgeschlossene Wochenausgabe' in root
+assert 'redaktionell finalisiert' in root and 'Kalenderfenster läuft bis Mitternacht' in root
+assert by_date['2026-10-30']['fridayFinalized'] is True
+assert by_date['2026-10-30']['finalizedThrough'] == state['sourceCutoff']
+assert by_date['2026-10-30']['newStories'] == 0
+assert by_date['2026-10-30']['retainedStories'] == 1
 
 for path in [ROOT/'editions.json', ROOT/'README.md', ROOT/'index.html', *ROOT.glob('assets/*'), *ROOT.glob('editions/*/index.html')]:
     text = path.read_text()

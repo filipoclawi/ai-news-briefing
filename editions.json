@@ -1,12 +1,17 @@
 {
   "latest": "2026-10-30",
-  "sourceCutoff": "2026-10-26T13:04:00+01:00",
+  "sourceCutoff": "2026-10-30T22:31:16+01:00",
   "mergePolicy": "Merge sources by clean issue URL and preserve existing story IDs; a partial edition must never be replaced by newly arrived sources alone.",
   "editions": [
     {
       "date": "2026-10-30",
       "path": "editions/2026-10-30/index.html",
       "status": "week-to-date",
+      "fridayFinalized": true,
+      "finalizedThrough": "2026-10-30T22:31:16+01:00",
+      "newStories": 0,
+      "retainedStories": 1,
+      "lateRecoveredSources": 0,
       "range": "24.–30. Oktober 2026",
       "stories": 1,
       "sources": [
