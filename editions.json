@@ -1,8 +1,80 @@
 {
-  "latest": "2026-10-30",
-  "sourceCutoff": "2026-10-30T22:31:16+01:00",
+  "latest": "2026-11-06",
+  "sourceCutoff": "2026-11-08T10:02:54+01:00",
   "mergePolicy": "Merge sources by clean issue URL and preserve existing story IDs; a partial edition must never be replaced by newly arrived sources alone.",
   "editions": [
+    {
+      "date": "2026-11-06",
+      "path": "editions/2026-11-06/index.html",
+      "status": "completed",
+      "range": "31. Oktober–6. November 2026",
+      "stories": 15,
+      "newStories": 15,
+      "retainedStories": 0,
+      "lateRecoveredSources": 0,
+      "sources": [
+        {
+          "title": "Welcome to Halloween 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-halloween-2026",
+          "audioRuntime": "6:11",
+          "storyIds": [
+            "delaware-ai-agent-company-proposal",
+            "anthropic-ipo-revenue-loss-balance",
+            "agents-dns-cache-isolation-failures"
+          ]
+        },
+        {
+          "title": "Welcome to November 1, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-november-1-2026",
+          "audioRuntime": "5:23",
+          "storyIds": [
+            "hyperscaler-three-trillion-commitments-credit",
+            "datacentre-local-water-energy-constraints",
+            "factorio-agent-logistics-planning-gap"
+          ]
+        },
+        {
+          "title": "Welcome to November 2, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-november-2-2026",
+          "audioRuntime": "5:55",
+          "storyIds": [
+            "anthropic-internal-ai-usage-retail-valuation",
+            "gdpx-lifeval-work-benchmark-gap",
+            "open-source-ai-patches-maintainer-load",
+            "apple-home-robot-software-delay"
+          ]
+        },
+        {
+          "title": "Welcome to November 6, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-november-6-2026",
+          "audioRuntime": "6:29",
+          "storyIds": [
+            "datacentres-post-election-moratoriums",
+            "metr-anthropic-research-acceleration-evidence",
+            "gpt6-cyber-autonomous-kernel-patching",
+            "gpt6-astra-safety-research-underperformance",
+            "joules-to-gdp-model-efficiency"
+          ]
+        }
+      ],
+      "storyIds": [
+        "datacentres-post-election-moratoriums",
+        "metr-anthropic-research-acceleration-evidence",
+        "gpt6-cyber-autonomous-kernel-patching",
+        "gpt6-astra-safety-research-underperformance",
+        "joules-to-gdp-model-efficiency",
+        "anthropic-internal-ai-usage-retail-valuation",
+        "gdpx-lifeval-work-benchmark-gap",
+        "open-source-ai-patches-maintainer-load",
+        "apple-home-robot-software-delay",
+        "hyperscaler-three-trillion-commitments-credit",
+        "datacentre-local-water-energy-constraints",
+        "factorio-agent-logistics-planning-gap",
+        "delaware-ai-agent-company-proposal",
+        "anthropic-ipo-revenue-loss-balance",
+        "agents-dns-cache-isolation-failures"
+      ]
+    },
     {
       "date": "2026-10-30",
       "path": "editions/2026-10-30/index.html",

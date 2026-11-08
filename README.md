@@ -6,6 +6,8 @@ Live site: <https://filipoclawi.github.io/ai-news-briefing/>
 
 ## Editions
 
+- **31. Oktober–6. November 2026 — abgeschlossene Woche:** vier vollständig ausgewertete Newsletter-Ausgaben, fünfzehn neue deutsche Kurzanalysen und vier strategische Einordnungen. Themen: Rechenzentren und Finanzierung, Politik, KI-Forschung, Software-Wartung und Sicherheit. Der eingefrorene Bestand enthält keine Quellen für die Woche bis 13. November und keine zusätzlichen archivierten Ausgaben in der Abdeckungslücke; daher keine leere Teilausgabe. Alle früheren Karten und Ausgaben bleiben erhalten.
+
 - **24.–30. Oktober 2026 — Freitagsausgabe, Woche bisher:** eine Newsletter-Ausgabe vom 24. Oktober, eine unverändert beibehaltene Forschungs-Kurzvorschau; keine neue Meldung. Redaktionell finalisiert zum Quellenstand 30. Oktober 2026, 22:31:16 CET. Das Kalenderfenster endet erst um Mitternacht; spätere Eingänge werden als Nachtrag ergänzt. Keine historischen Nachträge in diesem Lauf.
 - **17.–23. Oktober 2026 — abgeschlossene Woche, Nachtrag:** zwei Newsletter-Ausgaben, acht technische und strategische Kurzanalysen. Alle achtzig zuvor veröffentlichten Karten bleiben in ihren Archiven erhalten.
 

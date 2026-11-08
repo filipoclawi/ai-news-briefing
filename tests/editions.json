@@ -1,17 +1,17 @@
 {
   "index.html": {
-    "title": "AI Briefing — 2026-10-30 · Woche bisher · Week to date",
-    "stories": 1,
+    "title": "AI Briefing — 2026-11-06 · Abgeschlossene Woche",
+    "stories": 15,
     "metrics": [
-      "1",
-      "1",
-      "1",
+      "4",
+      "15",
+      "4",
       "0"
     ],
-    "sources": 1,
-    "cutoff": "30. Oktober 2026, 22:31:16 CET",
+    "sources": 4,
+    "cutoff": "8. November 2026, 10:02:54 CET",
     "basis": "newsletter-de",
-    "status": "week-to-date"
+    "status": "completed"
   },
   "editions/2026-07-23/index.html": {
     "title": "AI Briefing — 23 July 2026",
@@ -108,5 +108,19 @@
     "cutoff": "30. Oktober 2026, 22:31:16 CET",
     "basis": "newsletter-de",
     "status": "week-to-date"
+  },
+  "editions/2026-11-06/index.html": {
+    "title": "AI Briefing — 2026-11-06 · Abgeschlossene Woche",
+    "stories": 15,
+    "metrics": [
+      "4",
+      "15",
+      "4",
+      "0"
+    ],
+    "sources": 4,
+    "cutoff": "8. November 2026, 10:02:54 CET",
+    "basis": "newsletter-de",
+    "status": "completed"
   }
 }

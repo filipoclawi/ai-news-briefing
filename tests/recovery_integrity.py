@@ -17,13 +17,14 @@ class Cards(HTMLParser):
             self.ids.append(values.get('id'))
 
 state = json.loads((ROOT / 'editions.json').read_text())
-assert state['latest'] == '2026-10-30'
-assert state['sourceCutoff'] == '2026-10-30T22:31:16+01:00'
+assert state['latest'] == '2026-11-06'
+assert state['sourceCutoff'] == '2026-11-08T10:02:54+01:00'
 assert len(state['editions']) == len(list((ROOT / 'editions').glob('*/index.html')))
 by_date = {e['date']: e for e in state['editions']}
 for date, stories, sources, status in [
     ('2026-10-23', 8, 2, 'completed'),
     ('2026-10-30', 1, 1, 'week-to-date'),
+    ('2026-11-06', 15, 4, 'completed'),
 ]:
     entry = by_date[date]
     assert (entry['stories'], len(entry['sources']), entry['status']) == (stories, sources, status)
@@ -42,17 +43,33 @@ for date, stories, sources, status in [
         assert set(source['storyIds']).issubset(parser.ids)
         assert source['url'] in text
     assert set(parser.ids) == {i for s in entry['sources'] for i in s['storyIds']}
-root = (ROOT / 'index.html').read_text()
+root = (ROOT / 'editions/2026-10-30/index.html').read_text()
 assert 'Woche bisher' in root and '30. Oktober 2026, 22:31:16 CET' in root
 assert '24.–30. Oktober 2026' in root
 assert '2026-10-30' in root
 assert 'redaktionell finalisiert' in root and 'Kalenderfenster läuft bis Mitternacht' in root
 assert by_date['2026-10-30']['fridayFinalized'] is True
-assert by_date['2026-10-30']['finalizedThrough'] == state['sourceCutoff']
+assert by_date['2026-10-30']['finalizedThrough'] == '2026-10-30T22:31:16+01:00'
 assert by_date['2026-10-30']['newStories'] == 0
 assert by_date['2026-10-30']['retainedStories'] == 1
+
+latest = (ROOT / 'index.html').read_text()
+assert 'Abgeschlossene Woche' in latest and 'Woche bisher' not in latest
+assert '31. Oktober–6. November 2026' in latest
+assert '31. Oktober 00:00 bis 7. November 00:00 2026' in latest
+assert 'keine leere Teilausgabe' in latest
+assert by_date['2026-11-06']['newStories'] == 15
+assert by_date['2026-11-06']['retainedStories'] == 0
+assert not (ROOT / 'editions/2026-11-13').exists()
+archive = (ROOT / by_date['2026-11-06']['path']).read_text()
+def content_without_navigation(text):
+    return re.sub(r'<nav\b[^>]*class="edition-nav".*?</nav>', '', text, flags=re.S)
+assert content_without_navigation(latest) == content_without_navigation(archive.replace('../../assets/', 'assets/'))
+assert len(by_date['2026-11-06']['sources']) == 4
+assert [len(s['storyIds']) for s in by_date['2026-11-06']['sources']] == [3, 3, 4, 5]
+assert [s['audioRuntime'] for s in by_date['2026-11-06']['sources']] == ['6:11', '5:23', '5:55', '6:29']
 
 for path in [ROOT/'editions.json', ROOT/'README.md', ROOT/'index.html', *ROOT.glob('assets/*'), *ROOT.glob('editions/*/index.html')]:
     text = path.read_text()
     assert not re.search(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}|/home/|substack\.com/redirect|utm_|[?&](?:token|r|email|recipient)=|AIza[\w-]+|gh[pousr]_[\w]+', text, re.I), path
-print('PASS: durable edition/source/story mapping, German email-only previews, honest current-week cutoff, public privacy')
+print('PASS: completed latest edition, retained historical assertions, durable source/story mapping, German email-only previews, no empty partial, public privacy')
