@@ -1,8 +1,67 @@
 {
-  "latest": "2026-11-06",
-  "sourceCutoff": "2026-11-08T10:02:54+01:00",
+  "latest": "2026-11-13",
+  "sourceCutoff": "2026-11-13T22:31:49+01:00",
   "mergePolicy": "Merge sources by clean issue URL and preserve existing story IDs; a partial edition must never be replaced by newly arrived sources alone.",
   "editions": [
+    {
+      "date": "2026-11-13",
+      "path": "editions/2026-11-13/index.html",
+      "status": "week-to-date",
+      "fridayFinalized": true,
+      "finalizedThrough": "2026-11-13T22:31:49+01:00",
+      "range": "7.–13. November 2026",
+      "stories": 11,
+      "newStories": 11,
+      "retainedStories": 0,
+      "lateRecoveredSources": 0,
+      "sources": [
+        {
+          "title": "Welcome to November 9, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-november-9-2026",
+          "audioRuntime": "6:13",
+          "storyIds": [
+            "claude-dreaming-memory-consolidation",
+            "agent-peer-pressure-secrets-boundaries",
+            "datacentre-grid-cost-thresholds"
+          ]
+        },
+        {
+          "title": "Welcome to November 10, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-november-10-2026",
+          "audioRuntime": "6:01",
+          "storyIds": [
+            "fable-mythos-task-cost-safeguards",
+            "openai-control-room-fail-closed",
+            "agent-inference-memory-versus-flops"
+          ]
+        },
+        {
+          "title": "Welcome to November 12, 2026",
+          "url": "https://theinnermostloop.substack.com/p/welcome-to-november-12-2026",
+          "audioRuntime": "5:47",
+          "storyIds": [
+            "carbon-cryptography-verification-scope",
+            "gemini-robotics-parts-success-boundary",
+            "codex-python-compiler-equivalence",
+            "ai-search-discredited-research-provenance",
+            "ai-labs-revenue-loss-cloud-commitments"
+          ]
+        }
+      ],
+      "storyIds": [
+        "carbon-cryptography-verification-scope",
+        "gemini-robotics-parts-success-boundary",
+        "codex-python-compiler-equivalence",
+        "ai-search-discredited-research-provenance",
+        "ai-labs-revenue-loss-cloud-commitments",
+        "fable-mythos-task-cost-safeguards",
+        "openai-control-room-fail-closed",
+        "agent-inference-memory-versus-flops",
+        "claude-dreaming-memory-consolidation",
+        "agent-peer-pressure-secrets-boundaries",
+        "datacentre-grid-cost-thresholds"
+      ]
+    },
     {
       "date": "2026-11-06",
       "path": "editions/2026-11-06/index.html",
